@@ -1,26 +1,40 @@
 package com.review.streams.exercises;
 
+import com.review.enums.Status;
 import com.review.oop.inharitance.Project;
 
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class StreamDemo {
 
-    /*TODO 1:
 
+    public static void main(String[] args) {
+
+        getListOfProject();
+
+    }
+
+    /*TODO 1:
+     */
    public static List<Project> getListOfProject(){
 
+      return  DataGenerator.getProjects().stream().collect(Collectors.toList());
+
     }
 
-    */
+
 
     /*TODO 2:
-
+     */
    public static List<Project> getListOfProject(Status status){
+
+       return DataGenerator.getProjects().stream().collect(Collectors.toList());
 
     }
 
-    */
+
 
 
      /*TODO 3:
