@@ -43,7 +43,7 @@ public class DataGenerator {
             "Customer Service Detail");
     public static Project project4 = new Project(4, LocalDateTime.now(), 1, LocalDateTime.now().plusHours(2), 1,
             "PRJ004", "Ticketing Application", manager4, LocalDate.now(), LocalDate.now().plusDays(2), Status.UAT_TEST,
-            "Seperate the role and task projacts");
+            "Separate the role and task projects");
     public static Project project5 = new Project(5, LocalDateTime.now(), 1, LocalDateTime.now().plusHours(1), 1,
             "PRJ005", "E commerce", manager1, LocalDate.now(), LocalDate.now().plusDays(10), Status.OPEN,"Shopping");
 
