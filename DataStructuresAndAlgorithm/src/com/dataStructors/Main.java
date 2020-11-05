@@ -1,27 +1,44 @@
 package com.dataStructors;
 
-import com.dataStructors.linkedLists.CyLinkedList;
+import com.dataStructors.linkedLists.MyLinkedList;
 
 public class Main {
 
     public static void main(String[] args) {
 
         //todo: LinkedList
-        var cyLinkedList= new CyLinkedList();
-        cyLinkedList.addList(1);
-        cyLinkedList.addList(2);
-        cyLinkedList.addList(3);
+        var myLinkedList= new MyLinkedList();
 
-        cyLinkedList.printLinkedList();
+        for (int i = 1; i <= 10 ; i++) myLinkedList.addLast(i);
+
+        System.out.println("Initial LinkedList");
+        myLinkedList.printLinkedList();
         System.out.println();
-        cyLinkedList.deleteLast();
+        //myLinkedList.deleteLast();
 
-        cyLinkedList.printLinkedList();
-        System.out.println(cyLinkedList.size);
+        myLinkedList.printLinkedList();
+        System.out.println(myLinkedList.size);
 
 
-        //todo============================================
+        //todo============================================ QUESTIONS ===================
 
+        //TODO QA1;
+       // System.out.println("Reverse");
+       // myLinkedList.reverse();
+       // myLinkedList.printLinkedList();
+
+
+
+        //TODO QA2;
+
+        System.out.println("7th from the last is: "+myLinkedList.getKthFromTheEnd( 7));
+
+
+        //TODO QA2;
+
+        System.out.println("              Middle             ");
+
+        myLinkedList.printMiddle();
 
 
     }
